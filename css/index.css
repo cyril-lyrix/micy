@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'arco';
+    src: url('../src/arco.ttf') format('truetype');
+  }
+
+  
+  @font-face {
+    font-family: 'gothic';
+    src: url('../src/gothic.otf') format('opentype');
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .background_image {
+    height: 100vh;
+    background-image: url('../src/image_01.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    z-index: 1; 
+  }
+
+  .background_color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(transparent, #d19351 90%);
+    z-index: 2; 
+  }
+
+  .content_container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    font-family: 'arco', sans-serif;
+    font-size: 4rem;
+    color: wheat;
+    text-align: center;
+    padding: 0;
+    margin-top: 1rem;
+    text-shadow: 3px 6px #463a22;
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+.message {
+    color: wheat;
+    text-align: center;
+    margin: 15px 30px;
+    margin-top: auto;
+    font-family: sans-serif;
+    font-size: 0.89rem;
+}
+.enter {
+    color: wheat;
+    text-align: center;
+    margin: 15px auto 60px auto;
+    width: 20vh;
+    padding: 8px;
+    font-size: large;
+    background-color: #463a22;
+    border-radius: 100px;
+}
+
+.signin_container {
+    margin-top: auto;
+    height: 45vh;
+    background-color: #463a22;
+    border-radius: 10vh 10vh 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin_text {
+    color: wheat;
+    font-family: 'gothic';
+    font-style: normal;
+    font-weight: 1;
+}
+
+.password_container {
+    background-color: #b29d75;
+    padding: 15px;
+    width: 70%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#password {
+    color: #463a22;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: large;
+    margin-left: 15px;
+    font-family: 'gothic';
+}
+
+#password::placeholder {
+    color: #463a22;
+    opacity: 0.5;
+}
+
+.start {
+    color: wheat;
+    text-align: center;
+    margin: 15px auto 60px auto;
+    width: 70%;
+    padding: 15px;
+    font-size: large;
+    border-radius: 15px;
+    background-color: #b29d75;
+}
